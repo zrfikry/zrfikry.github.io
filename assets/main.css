@@ -237,7 +237,7 @@ footer ul > li a:hover {
     flex-direction: column;
   }
 
-  #portfolio ul > li {
+  #portfolio ul > li > a {
     margin-bottom: .5rem;
   }
 }
