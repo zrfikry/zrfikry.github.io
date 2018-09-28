@@ -24,7 +24,7 @@ header > p.position {
   margin: 1rem 0;
 }
 
-.skills > span {
+.skills {
   color: rgb(100, 100, 100);
   font-size: 1.5rem;
 }
@@ -221,10 +221,8 @@ footer ul > li a:hover {
     margin: .25rem 0;
   }
   
-  .skills > span {
-    color: rgb(100, 100, 100);
+  .skills {
     font-size: 1rem;
-    font-weight: 100;
   }
 
   .skills > span:first-child {
