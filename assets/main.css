@@ -12,7 +12,6 @@ body {
   position: relative;
   z-index: 1;
   top: 0;
-  padding: 2vw;
 }
 
 #main > header, #main > div {
@@ -44,13 +43,16 @@ h1 {
   margin: 0;
 }
 
-#bg {
+.background-image {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  top: 0;
   opacity: .25;
   z-index: -1;
+  top: 0;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .profile {
@@ -71,7 +73,7 @@ h1 {
   margin: 1rem 0;
   height: 2.5rem;
   border-radius: 1rem;
-  background: #0d47a1;
+  background: #0277bd;
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
@@ -88,7 +90,7 @@ h1 {
 
 .profile > .contact:hover {
   background: #fff;
-  color: #0d47a1;
+  color: #0277bd;
   animation: pop 0.5s ease-in;
 }
 
@@ -120,12 +122,16 @@ h1 {
   padding: 0;
 }
 
+#portfolio ul {
+  margin-bottom: 0;
+}
+
 #portfolio ul > li a {
   align-self: center;
   margin: 0 .5rem;
   height: 2.5rem;
   border-radius: 1rem;
-  background: #0d47a1;
+  background: #0277bd;
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
@@ -138,17 +144,18 @@ h1 {
   font-weight: 400;
   text-decoration: none;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-bottom: 1rem;
 }
 
 #portfolio ul > li a:hover {
   background: #fff;
-  color: #0d47a1;
+  color: #0277bd;
   animation: pop 0.5s ease-in;
 }
 
 footer {
   min-height: 10vh;
-  background: #0d47a1;
+  background: #0277bd;
   display: flex;
   justify-content: center;
 }
