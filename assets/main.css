@@ -129,7 +129,7 @@ h1 {
 }
 
 #portfolio {
-  background: #ddd;
+  background: #ccc;
   padding: 2vw;
   text-align: center;
 }
@@ -176,6 +176,63 @@ h1 {
   background: #fff;
   color: #0277bd;
   animation: pop 0.5s ease-in;
+}
+
+#projects {
+  background: #ddd;
+  padding: 2vw;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+#projects ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+#projects ul > li {
+  padding: 1rem;
+  margin: 0 .5rem;
+}
+
+#projects ul > li a {
+  text-decoration: none;
+}
+
+#projects ul > li h3 {
+  margin: .5rem;
+  border-radius: 1rem;
+  background: #0277bd;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all .5s;
+  padding: .75rem;
+  font-weight: 400;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-bottom: 1rem;
+}
+
+#projects ul > li a:hover h3, #projects ul > li a:hover img {
+  animation: pop 0.5s ease-in;
+}
+
+#projects ul > li a:hover h3 {
+  background: #fff;
+  color: #0277bd;
+}
+
+#projects ul > li img {
+  height: 75px;
+  min-width: 75px;
 }
 
 footer {
@@ -239,5 +296,20 @@ footer ul > li a:hover {
 
   #portfolio ul > li > a {
     margin-bottom: .5rem;
+  }
+
+  #projects ul {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  #projects ul > li {
+    min-width: 40vw;
+    margin: 0;
+    padding: .25rem;
+  }
+
+  #projects ul > li img {
+    max-width: 80%;
   }
 }
